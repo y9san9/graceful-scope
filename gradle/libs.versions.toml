@@ -1,0 +1,18 @@
+[versions]
+
+kotlin = "2.3.0"
+coroutines = "1.8.0"
+maven-publish = "0.29.0"
+ktlint = "13.0.0"
+graceful-scope = "1.0.0"
+
+[libraries]
+
+coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+maven-publish-gradle-plugin = { module = "com.vanniktech:gradle-maven-publish-plugin", version.ref = "maven-publish"  }
+
+[plugins]
+
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
